@@ -1,0 +1,33 @@
+{
+    auto_https disable_redirects
+}
+
+https://homepage.home.arpa {
+    tls internal
+    reverse_proxy homepage:3000
+}
+
+https://portainer.home.arpa {
+    tls internal
+    reverse_proxy portainer:9000
+}
+
+https://uptime.home.arpa {
+    tls internal
+    reverse_proxy uptimekuma:3001
+}
+
+https://netdata.home.arpa {
+    tls internal
+    reverse_proxy netdata:19999
+}
+
+https://files.home.arpa {
+    tls internal
+    reverse_proxy filebrowser:80
+}
+
+https://syncthing.home.arpa {
+    tls internal
+    reverse_proxy syncthing:8384
+}

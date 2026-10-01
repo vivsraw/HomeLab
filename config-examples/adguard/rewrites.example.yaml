@@ -1,0 +1,28 @@
+# DNS rewrites utilizados pelo homelab.
+# Este trecho deve ser incorporado à seção apropriada
+# da configuração do AdGuard Home.
+
+rewrites:
+  - domain: homepage.home.arpa
+    answer: 192.168.1.62
+    enabled: true
+
+  - domain: portainer.home.arpa
+    answer: 192.168.1.62
+    enabled: true
+
+  - domain: uptime.home.arpa
+    answer: 192.168.1.62
+    enabled: true
+
+  - domain: files.home.arpa
+    answer: 192.168.1.62
+    enabled: true
+
+  - domain: netdata.home.arpa
+    answer: 192.168.1.62
+    enabled: true
+
+  - domain: syncthing.home.arpa
+    answer: 192.168.1.62
+    enabled: true
